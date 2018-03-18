@@ -1,8 +1,5 @@
 <?php
 
-$total;
-
-
 if(is_numeric($argv[1]) && is_numeric($argv[3]) && count($argv)==4) {
 
     switch ($argv[2]) {
