@@ -1,13 +1,34 @@
 <?php
 
 $compAdj= [
-    'compliments'=>['belle','bone','sublime','gentil','mignon','magnifique','splendide','accessible']
+    'belle',
+    'bone',
+    'sublime',
+    'gentil',
+    'mignon',
+    'magnifique',
+    'splendide',
+    'accessible'
 ];
 $comNom= [
-    'nom'=>['mes aiselles','une chienne','un crocodile','une orange','ady','une baleine','mon petit asticot','ma cellulite']
+    'mes aiselles',
+    'une chienne',
+    'un crocodile',
+    'une orange',
+    'ady',
+    'une baleine',
+    'mon petit asticot',
+    'ma cellulite'
 ];
 $comAdj2=[
-    'adj'=>['noire','flamboyante','irregardable','puant','blonde','poilue','bleu marine','troglodyte']
+    'noire',
+    'flamboyante',
+    'irregardable',
+    'puant',
+    'blonde',
+    'poilue',
+    'bleu marine',
+    'troglodyte'
 ];
 
-print "Tu es ".$compAdj['compliments'][mt_rand(0,count($compAdj['compliments'])-1)]." comme ".$comNom['nom'][mt_rand(0,count($comNom['nom'])-1)]." ".$comAdj2['adj'][mt_rand(0,count($comAdj2['adj'])-1)];
+print "Tu es ".$compAdj[mt_rand(0,count($compAdj)-1)]." comme ".$comNom[mt_rand(0,count($comNom)-1)]." ".$comAdj2[mt_rand(0,count($comAdj2)-1)];
