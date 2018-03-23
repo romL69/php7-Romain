@@ -17,8 +17,7 @@ return [
     'extra-terrestre',
     'gros',
     'et tu fais 1m62',
-    'barbu',
-    'entre les jambes dadeline'
+    'barbu'
 
 
 ];
