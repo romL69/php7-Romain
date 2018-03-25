@@ -24,7 +24,7 @@ require_once(__DIR__.'/src/functions.php');
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">AlphaSeries</a>
+        <a class="navbar-brand" href="index.php">AlphaSeries</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +38,7 @@ require_once(__DIR__.'/src/functions.php');
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="classement.php">
+                    <a class="nav-link" href="classement.php?slug=popularity">
                         <i class="fas fa-trophy"></i> Classement
                     </a>
                 </li>
@@ -81,10 +81,11 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="col">Série</th>
                                 <th scope="col">
                                     Note
-                                    <a href="classement.php"><i class="fa fa-sort-down"></i></a>
+                                    <a href="classement.php?slug=rating"><i class="fa fa-sort-down"></i></a>
                                 </th>
                                 <th scope="col">
                                     Nombre de personnes qui regardent
+                                    <a href="classement.php?slug=popularity">
                                     <i class="fa fa-sort-down"></i>
                                 </th>
                             </tr>

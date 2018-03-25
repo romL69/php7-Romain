@@ -29,17 +29,17 @@
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="index.php">
                         <i class="fas fa-home"></i> Accueil
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="classement.html">
+                    <a class="nav-link" href="classement.php">
                         <i class="fas fa-trophy"></i> Classement
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="serie.html">
+                    <a class="nav-link" href="aleatoire.php">
                         <i class="fas fa-random"></i> Une série aléatoire
                     </a>
                 </li>

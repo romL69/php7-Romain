@@ -38,7 +38,7 @@ require_once(__DIR__.'/src/functions.php');
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="classement.php"
+                    <a class="nav-link" href="classement.php?slug=popularity"
                          <i class="fas fa-trophy"></i> Classement  >
                     </a>
                 </li>
@@ -105,7 +105,7 @@ require_once(__DIR__.'/src/functions.php');
                         </div>
                     </p>
                     <p>
-                        <a class="btn btn-outline-secondary" href="classement.html" role="button">
+                        <a class="btn btn-outline-secondary" href="classement.php?slug=popularity" role="button">
                             <i class="fa fa-trophy"></i> Voir tout le classement
                         </a>
                     </p>
@@ -143,7 +143,7 @@ require_once(__DIR__.'/src/functions.php');
                         </div>
                     </p>
                     <p>
-                        <a class="btn btn-outline-secondary" href="classement.php" role="button">
+                        <a class="btn btn-outline-secondary" href="classement.php?slug=rating" role="button">
                             <i class="fa fa-trophy"></i> Voir tout le classement
                         </a>
                     </p>

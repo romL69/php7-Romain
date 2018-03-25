@@ -59,11 +59,15 @@ function MostPopularsFilms(int $indice){
     $shows = json_decode($json, true);
     $MostPopularMovies=[];
     $Movie='Aucun';
+    $slug='toto';
+if (isset($_GET['slug'])) {
+    $slug = $_GET['slug'];
+}
     foreach ($shows as $key => $value)
      {
-         $MostPopularMovies[$key] = $shows[$key]["statistics"]["popularity"];
-     }
-     arsort( $MostPopularMovies);
+         $MostPopularMovies[$key] = $shows[$key]["statistics"][$slug];
+     }//cree tableau de films avec popularité
+     arsort( $MostPopularMovies);//classe par ordre decroissant
      $MoviesOrderByPopularity=array_keys( $MostPopularMovies);
      foreach($shows as $key => $value)
      {
