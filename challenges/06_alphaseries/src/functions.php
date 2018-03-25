@@ -43,17 +43,6 @@ function PopularsFilms(int $indice){
      return $Movie;
 }
 
-/*function stars()
-{
-    for ($i = 0; $i < getSerie()['statistics']['rating']-1; $i++) {
-    print '<i class="fa fa-star"></i>';
-    if(getSerie()['statistics']['rating']-$i-1>0.5 && getSerie()['statistics']['rating']-$i-1<1)
-    {
-        print '<i class="fa fa-star-half"></i>';
-    }
-    }
-}*/
-
 function MostPopularsFilms(int $indice){
     $json = file_get_contents(__DIR__.'/../data/shows.json');
     $shows = json_decode($json, true);

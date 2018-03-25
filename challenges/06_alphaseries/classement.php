@@ -43,7 +43,7 @@ require_once(__DIR__.'/src/functions.php');
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="serie.php">
+                    <a class="nav-link" href="aleatoire.php">
                         <i class="fas fa-random"></i> Une série aléatoire
                     </a>
                 </li>
@@ -95,7 +95,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">1</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(0)['slug']?>"><?= MostPopularsFilms(0)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(0)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(0)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(0)?>
                                     </span>
                                 </td>
@@ -105,7 +105,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">2</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(1)['slug']?>"><?= MostPopularsFilms(1)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(1)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(1)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(1)?>
                                     </span>
                                 </td>
@@ -115,7 +115,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">3</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(2)['slug']?>"><?= MostPopularsFilms(2)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(2)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(2)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(2)?>
                                     </span>
                                 </td>
@@ -125,7 +125,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">4</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(3)['slug']?>"><?= MostPopularsFilms(3)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(3)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(3)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(3)?>
                                     </span>
                                 </td>
@@ -135,7 +135,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">5</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(4)['slug']?>"><?= MostPopularsFilms(4)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(4)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(4)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(4)?>
                                     </span>
                                 </td>
@@ -145,7 +145,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">6</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(5)['slug']?>"><?= MostPopularsFilms(5)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(5)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(5)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(5)?>
                                     </span>
                                 </td>
@@ -155,7 +155,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">7</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(6)['slug']?>"><?= MostPopularsFilms(6)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(6)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(6)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(6)?>
                                     </span>
                                 </td>
@@ -165,7 +165,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">8</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(7)['slug']?>"><?= MostPopularsFilms(7)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(7)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(7)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(7)?>
                                     </span>
                                 </td>
@@ -175,7 +175,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">9</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(8)['slug']?>"><?= MostPopularsFilms(8)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(8)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(8)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(8)?>
                                     </span>
                                 </td>
@@ -185,7 +185,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">10</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(9)['slug']?>"><?= MostPopularsFilms(9)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(9)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(9)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(9)?>
                                     </span>
                                 </td>
@@ -195,7 +195,7 @@ require_once(__DIR__.'/src/functions.php');
                                 <th scope="row">11</th>
                                 <td><a href="serie.php?slug=<?=MostPopularsFilms(10)['slug']?>"><?= MostPopularsFilms(10)['name']?></a></td>
                                 <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=TopRatedMovies(10)['statistics']['rating']?>">
+                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(10)['statistics']['rating'],1)?>">
                                         <?= StarsInClassement(10)?>
                                     </span>
                                 </td>

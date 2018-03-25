@@ -40,12 +40,12 @@ require_once(__DIR__.'/src/functions.php');
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="classement.php">
+                    <a class="nav-link" href="classement.php?slug=popularity">
                         <i class="fas fa-trophy"></i> Classement
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="serie.php">
+                    <a class="nav-link" href="aleatoire.php">
                         <i class="fas fa-random"></i> Une série aléatoire
                     </a>
                 </li>
