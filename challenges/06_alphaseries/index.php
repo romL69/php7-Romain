@@ -50,7 +50,7 @@ require_once(__DIR__.'/src/functions.php');
             </ul>
 
             <!-- Formulaire de recherche -->
-            <form action="recherche.html" method="post" class="form-inline my-2 my-lg-0">
+            <form action="recherche.php" method="post" class="form-inline my-2 my-lg-0">
                 <input name="search" class="form-control mr-sm-2" type="text" placeholder="Rechercher une série" aria-label="Rechercher une série">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
                     <i class="fa fa-search"></i> <span class="d-md-none">Rechercher</span>
@@ -77,33 +77,24 @@ require_once(__DIR__.'/src/functions.php');
                 <div class="col-md-6">
                     <h2><i class="fa fa-fire"></i> Les plus populaires</h2>
                     <p>Les séries qui sont suivient par le plus de monde.</p>
-                    <p>
-                        <div class="card">
-                          <img class="card-img-top" src=<?=PopularsFilms(0)['images']['banner']?>>
-                          <div class="card-body">
-                              <h5 class="card-title">#1 - <a href="serie.php?slug=<?=PopularsFilms(0)['slug']?>"><?= PopularsFilms(0)['name']?></a></h5>
-                              <p class="card-text"><?= PopularsFilms(0)['statistics']['popularity']?> personnes regardent cette série.</p>
-                          </div>
-                        </div>
-                    </p>
-                    <p>
-                        <div class="card">
-                          <img class="card-img-top" src=<?=PopularsFilms(1)['images']['banner']?>>
-                          <div class="card-body">
-                              <h5 class="card-title">#2 - <a href="serie.php?slug=<?=PopularsFilms(1)['slug']?>"><?= PopularsFilms(1)['name']?></a></h5>
-                              <p class="card-text"><?= PopularsFilms(1)['statistics']['popularity']?> personnes regardent cette série.</p>
-                          </div>
-                        </div>
-                    </p>
-                    <p>
-                        <div class="card">
-                          <img class="card-img-top" src=<?=PopularsFilms(2)['images']['banner']?>>
-                          <div class="card-body">
-                              <h5 class="card-title">#3 - <a href="serie.php?slug=<?=PopularsFilms(2)['slug']?>"><?= PopularsFilms(2)['name']?></a></h5>
-                              <p class="card-text"><?= PopularsFilms(2)['statistics']['popularity']?> personnes regardent cette série.</p>
-                          </div>
-                        </div>
-                    </p>
+                    <?php
+
+                    for($i=0;$i<3;$i++){
+                        $nb=$i+1;
+                        print '<p>';
+
+                        print   '<div class="card">';
+                        print   '<img class="card-img-top" src='.PopularsFilms($i)['images']['banner'].'>';
+                        print   ' <div class="card-body">';
+                        print   ' <h5 class="card-title">'.$nb.' - <a href="serie.php?slug='.PopularsFilms($i)['slug'] .'>' .PopularsFilms($i)['name'].'</a></h5>';
+                        print   ' <p class="card-text">'. PopularsFilms($i)['statistics']['popularity'].' personnes regardent cette série.</p>';
+                        print   ' </div>';
+                        print   '</div>';
+                        print   '</p>';
+                    }
+                    ?>
+
+
                     <p>
                         <a class="btn btn-outline-secondary" href="classement.php?slug=popularity" role="button">
                             <i class="fa fa-trophy"></i> Voir tout le classement

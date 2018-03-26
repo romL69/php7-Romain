@@ -91,116 +91,18 @@ require_once(__DIR__.'/src/functions.php');
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(0)['slug']?>"><?= MostPopularsFilms(0)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(0)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(0)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(0)['statistics']['popularity']?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(1)['slug']?>"><?= MostPopularsFilms(1)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(1)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(1)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(1)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(2)['slug']?>"><?= MostPopularsFilms(2)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(2)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(2)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(2)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(3)['slug']?>"><?= MostPopularsFilms(3)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(3)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(3)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(3)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(4)['slug']?>"><?= MostPopularsFilms(4)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(4)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(4)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(4)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(5)['slug']?>"><?= MostPopularsFilms(5)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(5)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(5)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(5)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(6)['slug']?>"><?= MostPopularsFilms(6)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(6)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(6)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(6)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(7)['slug']?>"><?= MostPopularsFilms(7)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(7)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(7)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(7)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(8)['slug']?>"><?= MostPopularsFilms(8)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(8)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(8)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(8)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(9)['slug']?>"><?= MostPopularsFilms(9)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(9)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(9)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(9)['statistics']['popularity']?> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <td><a href="serie.php?slug=<?=MostPopularsFilms(10)['slug']?>"><?= MostPopularsFilms(10)['name']?></a></td>
-                                <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title=" <?=round(TopRatedMovies(10)['statistics']['rating'],1)?>">
-                                        <?= StarsInClassement(10)?>
-                                    </span>
-                                </td>
-                                <td><?= MostPopularsFilms(10)['statistics']['popularity']?> </td>
-                            </tr>
+                            <?php
+
+                            for($i=0;$i<11;$i++){
+                                $nb=$i+1;
+                                print '<tr> <th scope="row">'.$nb.'</th>';
+                                print '<td><a href="serie.php?slug='.MostPopularsFilms($i)['slug'].'">'.MostPopularsFilms($i)['name'].'</a></td>';
+                                print '<td> <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="'.TopRatedMovies($i)['statistics']['rating'].'">';
+                                print StarsInClassement($i).'</span></td>';
+                                print '<td>'.MostPopularsFilms($i)['statistics']['popularity'].'</td></tr>';
+                            }
+                            ?>
+
                         </tbody>
                     </table>
 

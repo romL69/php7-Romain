@@ -52,7 +52,7 @@ require_once(__DIR__.'/src/functions.php');
             </ul>
 
             <!-- Formulaire de recherche -->
-            <form action="recherche.html" method="post" class="form-inline my-2 my-lg-0">
+            <form action="recherche.php" method="post" class="form-inline my-2 my-lg-0">
                 <input name="search" class="form-control mr-sm-2" type="text" placeholder="Rechercher une série" aria-label="Rechercher une série">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
                     <i class="fa fa-search"></i> <span class="d-md-none">Rechercher</span>
