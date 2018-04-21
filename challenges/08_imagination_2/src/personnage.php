@@ -2,9 +2,7 @@
 
 
 class Personnage {
-    public $nom;
-    public $vie;
-    public $attack;
+    
     public function __construct(string $nom,int $vie, int $attack, int $magic)
     {
         $this->nom=$nom;

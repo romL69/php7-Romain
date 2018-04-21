@@ -1,0 +1,10 @@
+{
+    "name": "romlo/test_discord",
+    "authors": [
+        {
+            "name": "romainLoire",
+            "email": "romain.loire@ynov.com"
+        }
+    ],
+    "require": {}
+}

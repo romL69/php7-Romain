@@ -1,0 +1,17 @@
+{
+    "name": "romlo/testtest_discord",
+    "authors": [
+        {
+            "name": "romainLoire",
+            "email": "romain.loire@ynov.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+},
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
